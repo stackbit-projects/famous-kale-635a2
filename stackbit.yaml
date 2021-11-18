@@ -1,0 +1,50 @@
+stackbitVersion: ~0.3.0
+ssgName: nextjs
+nodeVersion: '12'
+publishDir: out
+dataDir: components
+models:
+  plasmic_tokens_theo:
+    type: data
+    label: Plasmic Tokens Theo
+    file: plasmic-tokens.theo.json
+    fields:
+      - type: list
+        name: props
+        label: Props
+        items:
+          type: object
+          fields:
+            - type: string
+              name: name
+              label: Name
+            - type: string
+              name: type
+              label: Type
+            - type: string
+              name: value
+              label: Value
+            - type: string
+              name: category
+              label: Category
+            - type: object
+              name: meta
+              label: Meta
+              fields:
+                - type: string
+                  name: projectId
+                  label: Project Id
+                - type: string
+                  name: id
+                  label: Id
+      - type: object
+        name: global
+        label: Global
+        fields:
+          - type: object
+            name: meta
+            label: Meta
+            fields:
+              - type: string
+                name: source
+                label: Source
